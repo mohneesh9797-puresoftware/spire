@@ -59,6 +59,8 @@ jobs:
       name: linux tests
       script:
         - .travis/run-unit-tests.sh
+      os: linux
+      dist: xenial
     - stage: build release
       script:
         - make artifact
