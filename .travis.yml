@@ -54,6 +54,11 @@ jobs:
         - .travis/run-unit-tests.sh
       os: linux
       dist: xenial
+    - arch: arm64
+      stage: lint and test
+      name: linux tests
+      script:
+        - .travis/run-unit-tests.sh
     - stage: build release
       script:
         - make artifact
